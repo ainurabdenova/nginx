@@ -7,6 +7,7 @@ const HomePage = () => {
 			HomePage
 			<Link to={routes.about}>About</Link>
 			<Link to={routes.notFound}>NotFoundPage</Link>
+			<Link to={routes.login}>Login</Link>
 		</h1>
 	)
 }

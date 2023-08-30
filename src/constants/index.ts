@@ -2,7 +2,9 @@ export const routes = Object.freeze({
 	main: "/",
 	home: "/home",
 	about: "/about",
-	notFound: "/*",
-}) 
+	login: "/login",
+	notFound: "/not-found",
+	others: "/*",
+})
 
-export type RoutesKeys = typeof routes[keyof typeof routes];
+export type RoutesKeys = (typeof routes)[keyof typeof routes]
